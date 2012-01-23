@@ -1,8 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<title>Accessible Sudoku</title>
+<meta name="" content="">
+
+<link rel="stylesheet" href="fontcss.css" type="text/css" media="screen,projection" />
+</head>
+<body>
+<form>
+<table id='bigbrd' align='center'>
+<tr>
+<td class="big_s2 " id="box11">
+<input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell11" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);"/></td>
+<td class="big_s2 " id="box12" >
+<input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell12" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box13" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell13" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box14" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell14" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box15" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell15" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box16" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell16" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box17" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell17" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box18" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell18" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box19" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell19" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s2 " id="box21" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell21" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box22" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell22" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box23" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell23" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box24" >
+  <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell24" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box25" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell25" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box26" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell26" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box27" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell27" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box28" >
+  <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell28" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box29" >
+  <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell29" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s2 " id="box31" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell31" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box32" >
+  <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell32" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box33" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell33" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box34" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell34" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box35" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell35" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box36" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell36" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box37" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell37" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box38" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell38" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box39" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell39" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s1 " id="box41" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell41" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box42" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell42" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box43" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell43" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box44" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell44" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box45" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell45" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box46" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell46" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box47" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell47" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box48" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell48" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box49" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell49" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s1 " id="box51" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell51" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box52" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell52" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box53" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell53" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box54" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell54" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box55" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell55" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box56" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell56" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box57" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell57" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box58" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell58" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box59" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell59" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s1 " id="box61" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell61" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box62" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell62" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box63" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell63" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box64" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell64" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box65" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell65" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box66" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell66" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box67" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell67" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box68" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell68" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box69" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell69" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s2 " id="box71" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell71" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box72" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell72" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box73" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell73" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box74" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell74" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box75" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell75" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box76" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell76" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box77" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell77" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box78" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell78" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box79" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell79" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s2 " id="box81" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell81" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box82" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell82" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box83" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell83" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box84" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell84" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box85" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell85" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box86" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell86" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box87" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell87" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box88" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell88" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box89" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell89" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ 
+ <tr>
+ <td class="big_s2 " id="box91" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell91" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box92" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell92" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box93" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell93" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box94" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell94" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box95" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell95" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box96" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell96" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s1 " id="box97" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell97" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box98" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell98" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ <td class="big_s2 " id="box99" >
+ <input x-webkit-speech type="text" maxlength='1' size='1' class="insu inpfw" id="cell99" onkeydown="move(id,event);" onfocus="speakpos(id);" onkeyup="tellme(id);" /></td>
+ </tr>
+ </table> 
+  
+ 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
+
+
+var newSpeech;
+var spkornot = true;
+var arr = [];
+var newSudoku;
 (function($){
+$(":input").focus(function(){
+this.select();
+});
+
 Object.prototype.clone = function () {
 	var o = new Object();
 	for (var property in this)
@@ -33,37 +243,38 @@ var Sudoku = function(){
 		this.ans[row]=cols;
 	}
 };
-Sudoku.prototype.checkRowConflict=function(row,col){
-	var value = this.grid[row][col];
+Sudoku.prototype.checkRowConflict=function(grid1,row,col){
+	var value = grid1[row][col];
 	
 	if(value == 0)
 		return false;
 		
 	for(var i = 0; i < 9; i++)
 	{
-		if(i != row && this.grid[i][col] == value) 
+		if(i != row && grid1[i][col] == value) 
 		{
 			return true;
 		}
 	}
 return false;
 };
-Sudoku.prototype.checkColConflict=function(row,col){
-var value = this.grid[row][col];
+Sudoku.prototype.checkColConflict=function(grid1,row,col){
+var value = grid1[row][col];
 	
 	if(value == 0)
 		return false;
 		
 	for(var i = 0; i < 9; i++)
 	{
-		if(i != col && this.grid[row][i] == value)
+	//alert("comparing "+grid[row][i]+" with "+value);
+		if(i != col && grid1[row][i] == value)
 		{
 			return true;				
 		}
 	}
 return false;
 };
-Sudoku.prototype.checkBoxConflict=function(row,col){
+Sudoku.prototype.checkBoxConflict=function(grid1,row,col){
 	var mgX = Math.floor(col / 3);
 	var mgY = Math.floor(row / 3);
 	
@@ -78,10 +289,9 @@ Sudoku.prototype.checkBoxConflict=function(row,col){
 	{
 		for(var c = startCol; c < endCol; c++)
 		{
-			var value = this.grid[r][c];
+			var value = grid1[r][c];
 			if(value == 0)
 				continue;
-				
 			if(jQuery.inArray(value, numbers)!==-1)
 				return false;
 				
@@ -90,6 +300,72 @@ Sudoku.prototype.checkBoxConflict=function(row,col){
 	}
 	return true;
 };
+
+/*Sudoku.prototype.conflictCheck=function(grid1){
+	//document.write(grid + "<br/>");
+	var flgbox=false,flgcol=false,flgrow=false;
+	for(var row=0; row<9; row++)
+	{
+		for(var col=0; col<9; col++)
+		{
+			flgbox=this.checkBoxConflict(grid1,row,col);
+			flgcol=this.checkColConflict(grid1,row,col);
+			flgrow=this.checkRowConflict(grid1,row,col);
+		}
+	}
+	alert(flgbox+'-'+flgcol+'-'+flgrow);
+	if(!flgbox)
+		return 1;
+	else if(flgcol)
+		return 2;
+	else if(flgrow)
+		return 3;
+	else
+		return 0;
+}
+*/
+Sudoku.prototype.checkifcomplete=function(){
+	var done = false;
+	//var blank = true;
+	for(var row = 1; row <= 9; row++)
+	{
+		for(var col = 1; col <= 9; col++)
+		{
+			var val = ans[row-1][col-1];
+			var str = "cell" + row + col;
+			var cell=document.getElementById(str);
+			sval = String(val);
+			scell = String(cell.value);
+			//document.write("comparing " + sval + " with " + scell);
+			//document.getElementById("para").innerHTML += "comparing " + sval + " with " + scell + "<br/>";
+			//alert(val + " " + cell.value);
+			if(sval === scell)
+				done = true;
+			else
+			{
+				done = false;
+				return false;
+			}
+			//if(cell.length <= 0)
+				//blank = false;
+		}
+	}
+	//alert(done);
+	if(done) //&& blank === false)
+	{
+		newSpeech.speak(" You have won this game! ",0,0);
+		return true;
+		//alert("completed");
+		//document.getElementById("para").innerHTML += " done "
+	}
+	else
+	{
+		//document.getElementById("para").innerHTML += " not yet done "
+		done = false;
+		return false;
+	}
+}
+
 Sudoku.prototype.genSudoku=function(){
 	var cellNumbers = [];
 	for(var i = 0; i < 81; i++)
@@ -110,7 +386,7 @@ Sudoku.prototype.genSudoku=function(){
 				var num = cellNumbers[i].splice(rnd, 1)[0];
 				this.grid[row][col]=num;
 				var conflict_flag=false;
-				if(this.checkRowConflict(row,col) || this.checkColConflict(row,col) || !this.checkBoxConflict(row,col))
+				if(this.checkRowConflict(this.grid,row,col) || this.checkColConflict(this.grid,row,col) || !this.checkBoxConflict(this.grid,row,col))
 				{
 					conflict_flag=true;
 					val_found=false;
@@ -152,17 +428,31 @@ Sudoku.prototype.cull=function(amount){
 			this.grid[row][col]=0;
 		}
 }
-Sudoku.prototype.toString=function(){
+
+Sudoku.prototype.toString=function(which){
 	var str = '';
+	if (which === "ans")
+		arr=this.ans;
+	else
+		arr=this.grid;
 	for(var row = 0; row < 9; row++)
 	{
 		for(var col = 0; col < 9; col++)
 		{
-			str += this.grid[row][col];
+			str += arr[row][col];
 		}
 		str += "<br />";
 	}
 	return str;
+};
+
+Sudoku.prototype.getGrid=function(which){
+	var arr = [];
+	if (which === "ans")
+		arr=this.ans;
+	else
+		arr=this.grid;	
+	return arr;
 };
 
 var Speech = function(){
@@ -170,51 +460,232 @@ var Speech = function(){
 };
 
 Speech.prototype.speak=function(toSpeak,ind,old_time){
-	last_index=ind;
-	if(typeof toSpeak!=="string")
-		return;
-	
-	if(toSpeak.length<=0)
-		return;
+    last_index=ind;
+    if(typeof toSpeak!=="string")
+        return;
+   
+    if(toSpeak.length<=0)
+        return;
 
-			if(last_index<toSpeak.length)
-			{
-				var new_last_index=0;
-				var chunk ="";
-				var left = toSpeak.length-last_index;
-				left=left>100?100:left;
-				//alert("chunking from "+last_index);
-				chunk= toSpeak.substr(last_index,left);
-				new_last_index=chunk.lastIndexOf(' ');
-				if(new_last_index===-1 || new_last_index===0)
-					new_last_index=chunk.length;
-				else
-					new_last_index=new_last_index;
-				if(chunk.length<=100)
-					new_last_index=chunk.length;
-				var chunky= chunk.slice(0,new_last_index);
-				time=((chunky.split(' ').length)*1000)/2.2;
-				time+=old_time;
-				setTimeout(function(){
-					$("#ifrm").remove();
-					$('body').append("<iframe id='ifrm'>");
-					$("#ifrm").get(0).contentWindow.location.href = 'http://translate.google.com/translate_tts?tl=ch&q='+chunky;
-					$("#ifrm").attr('frameBorder', '0');
-					$("#ifrm").attr('width', '0');
-					$("#ifrm").attr('height', '0');
-				},old_time);
-				last_index=(last_index+chunk.length)-(chunk.length-new_last_index);
-				old_time=time;
-				this.speak(toSpeak,last_index,old_time);
-			}
+            if(last_index<toSpeak.length)
+            {
+                var new_last_index=0;
+                var chunk ="";
+                var left = toSpeak.length-last_index;
+                left=left>100?100:left;
+                //alert("chunking from "+last_index);
+                chunk= toSpeak.substr(last_index,left);
+                new_last_index=chunk.lastIndexOf(' ');
+                if(new_last_index===-1 || new_last_index===0)
+                    new_last_index=chunk.length;
+                else
+                    new_last_index=new_last_index;
+                if(chunk.length<=100)
+                    new_last_index=chunk.length;
+                var chunky= chunk.slice(0,new_last_index);
+                time=((chunky.split(' ').length)*1000)/2.2;
+                time+=old_time;
+				
+				//if(spkornot)
+				//{
+				
+                setTimeout(function(){	
+                    $("#ifrm").remove();
+                    $('body').append("<iframe id='ifrm' name='ifrm'>");
+                    $("#ifrm").get(0).contentWindow.location.href = 'http://translate.google.com/translate_tts?tl=ch&q='+chunky;
+                    $("#ifrm").attr('frameBorder', '0');
+                    $("#ifrm").attr('width', '0');
+                    $("#ifrm").attr('height', '0');
+                },old_time);
+				//}
+                last_index=(last_index+chunk.length)-(chunk.length-new_last_index);
+                old_time=time;
+                this.speak(toSpeak,last_index,old_time);
+            }
 };
-var newSudoku = new Sudoku();
+
+newSudoku = new Sudoku();
 newSudoku.genSudoku();
-document.write(newSudoku.toString());
-var newSpeech = new Speech()
-newSpeech.speak("Hi, Welcome to worlds most accessible sudoku. Please press space bar to skip the instructions. You can use arrow keys to move around in the puzzle.Please use keys z, x and c for knowing the values of rows, columns and blocks.",0,0);
+//document.write(newSudoku.toString("ans"));
+arr = newSudoku.getGrid("grid");
+ans = newSudoku.getGrid("ans");
+
+newSpeech = new Speech()
+//newSpeech.speak("Hi, Welcome to worlds most accessible sudoku. Please press space bar to skip the instructions. You can use arrow keys to move around in the puzzle.Please use keys z, x and c for knowing the values of rows, columns and blocks.",0,0);
 //newSpeech.speak("hello world",0,0);
+//spkornot = applyKey;
+//if(spkornot == "dontspeak")
+	//alert("stop");
+
 })(jQuery)
+
 </script>
-</head>
+
+<script language="JavaScript" type="text/JavaScript">
+
+function move(id,event)
+{
+s=String(id);
+x = s.substring(4,5);
+y = s.substring(5,6);
+var text = event.keyCode;
+//alert(text);
+if(event.keyCode == 40)
+{
+x1=parseInt(x);
+x1++;
+x=x1.toString();
+}
+else if(event.keyCode == 39)
+{
+y1=parseInt(y);
+y1++;
+y=y1.toString();
+}
+else if(event.keyCode == 38)
+{
+x1=parseInt(x);
+x1--;
+x=x1.toString();
+}
+else if(event.keyCode == 37)
+{
+y1=parseInt(y);
+y1--;
+y=y1.toString();
+}
+s='cell'+x+y;
+document.forms[0].elements[s].focus();
+
+}
+
+function speakpos(id)
+{
+s=String(id);
+x = s.substring(4,5);
+y = s.substring(5,6);
+s= 'row ' + x + ' column ' + y+'.';
+//newSpeech.speak(s,0,0);
+var cell=document.getElementById(id);
+v=cell.value;
+	if(v.length<=0)
+	{
+		//cell.value = '';
+		newSpeech.speak(s+"value empty " + v,0,0);
+	}
+	else if( v!=1 && v!=2 && v!=3 && v!=4 && v!=5 && v!=6 && v!=7 && v!=8 && v!=9 )
+	{
+		//cell.value = '';
+		newSpeech.speak(s+" incorrect value ",0,0);
+	}
+	else
+	{
+		newSpeech.speak(s+" value " + v,0,0);
+	}
+}
+
+function tellme(id)
+{ 
+//alert(newSudoku.conflictCheck(getCurrentGrid()));
+
+if(!newSudoku.checkifcomplete())
+{
+	 vl=document.getElementById(""+id+"");
+	 var v=vl.value;
+	s=String(id);
+	x = s.substring(4,5);
+	y = s.substring(5,6);
+	s= 'row ' + x + ' column ' + y+'.';
+	if(v.length<=0)
+	{
+	}
+	else if( v==='1' || v==='2' || v==='3' || v==='4' || v==='5' || v==='6' || v==='7' || v==='8' || v==='9' )
+	  {
+	  	newSpeech.speak(s+" value "+v,0,0);
+	  }	
+	else 
+	  {
+	  	vl.value='';
+	 	newSpeech.speak(s+" incorrect value ",0,0);
+	  }  
+ }
+  
+}
+
+function populateGrid()
+{
+	for(var row = 1; row <= 9; row++)
+	{
+		for(var col = 1; col <= 9; col++)
+		{
+			var val = arr[row-1][col-1];
+			var str = "cell" + row + col;
+			var cell=document.getElementById(str);			
+			if(val !== 0)
+			{
+				document.forms[0].elements[str].disabled=true;
+				cell.value = val;			
+			}
+		}
+	}
+}
+
+function getCurrentGrid()
+{
+	var curGrid = [];
+	for(var row = 0; row < 9; row++)
+	{
+		var cols = [];
+		for(var col = 0; col < 9; col++)
+			cols[col] = 0;
+		curGrid[row] = cols;
+	}
+	for(var row = 1; row <= 9; row++)
+	{
+		for(var col = 1; col <= 9; col++)
+		{
+			//var val = arr[row-1][col-1];
+			var str = "cell" + row + col;
+			var cell=document.getElementById(str);
+			var scell = cell.value;
+			if(scell!=='1' && scell!=='2' && scell!=='3' && scell!=='4' && scell!=='5' && scell!=='6' && scell!=='7' && scell!=='8' && scell!=='9')
+				curGrid[row-1][col-1] = '0';							
+			else
+				curGrid[row-1][col-1] = cell.value;							
+		}
+	}
+	return curGrid;
+}
+
+function checkEventObj ( _event_ ){
+	// --- IE explorer
+	if ( window.event )
+		return window.event;
+	// --- Netscape and other explorers
+	else
+		return _event_;
+}
+
+function showKey(e) {
+var winObj;
+winObj = checkEventObj(e);
+var intKeyCode = winObj.keyCode;
+//key = String.fromCharCode(key);
+document.getElementById("para").innerHTML += intKeyCode;
+//on space bar
+if(intKeyCode == 32)
+{
+newSpeech.speak(" ",0,0);
+spkornot = false;
+}
+}
+window.onload = function() {
+//document.onkeydown = checkifcomplete();
+populateGrid();
+}
+
+</script>
+
+ </form>
+</body>
 </html>
